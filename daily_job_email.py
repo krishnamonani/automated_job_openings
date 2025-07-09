@@ -73,9 +73,6 @@ def log(message):
         f.write(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] {message}\n")
 
 
-
-
-
 def main():
     jobs = get_jobs()  # Step 1: Fetch and filter jobs
     if not jobs:
@@ -89,9 +86,6 @@ def main():
         log("Email sent successfully.")  # Log success
     except Exception as e:
         log(f"[ERROR] {e}")  # Log any error that occurs in summarizing or sending
-
-
-
 
 
 if __name__ == "__main__":
